@@ -1,6 +1,6 @@
 # PDF Generation Microservice
 
-A Python-based microservice that converts JSON data to PDF documents.
+A Python-based microservices that converts JSON data to PDF documents.
 
 ## Features
 
