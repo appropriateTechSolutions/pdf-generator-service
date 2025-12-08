@@ -3,7 +3,6 @@ services:
     name: pdf-generator-service
     env: python
     plan: free
-    build:
-      pythonVersion: 3.10
-      command: pip install --upgrade pip && pip install -r requirements.txt
+    runtime: python3.10
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
